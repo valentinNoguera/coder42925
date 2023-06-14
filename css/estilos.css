@@ -1,0 +1,180 @@
+/* ID */
+#fondoRojo{
+    background-image: url("../imagenes/unaParte.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* CLASE */
+.letraAzul{
+    color: blue;
+}
+
+.fondoGris{
+    background-color: gray;
+}
+
+h1{
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    display: inline;
+    color: black;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    padding: 0 60px;
+}
+.imagenes{
+    position: relative;
+}
+.wsp img{
+    height: 40px;
+    width: 40px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 50%;
+}
+.wsp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.redes img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-top: 5px;
+}
+.redes{
+    position: fixed;
+    left: 0;
+    top: 50%;
+}
+.padre{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.padre img{
+    width: 200px;
+    height: 200px;
+}
+.contenedorTotal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "menu menu"
+    "nosotros nosotros"
+    "galeria productos"
+    "footer footer";
+}
+.tituloPrincipal{
+    grid-area: titulo;
+}
+.header{
+    grid-area: menu;
+}
+.nosotrosNos{
+    grid-area: nosotros;
+}
+.galeriaNos{
+    grid-area: galeria;
+}
+.productosNos{
+    grid-area: productos;
+}
+.footerNos{
+    grid-area: footer;
+}
+.bodyProductos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 
+    "header main footer";
+}
+.header_productos{
+    background-color: palevioletred;
+}
+.main_productos{
+    background-color: brown;
+    grid-area: main;
+}
+.footer_productos{
+    background-color: aqua;
+    grid-area: footer;
+}
+@media screen and (max-width: 768px){
+    .bodyProductos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header"
+        "main footer";
+    }
+    .header_productos{
+        background-color: yellow;
+    }
+    .main_productos{
+        background-color: orange;
+    }
+    .footer_productos{
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 500px){
+    .bodyProductos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+     }
+     .header_productos{
+        background-color: pink;
+    }
+    .main_productos{
+        background-color: gray;
+    }
+    .footer_productos{
+        background-color: green;
+    }
+}
+a{
+    background-color: red;
+}
+a:link{
+    background-color: green;
+}
+a:hover{
+    background-color: orange;
+    font-size: 35px;
+}
+a:active{
+    background-color: violet;
+}
+a:visited{
+    background-color: aqua;
+    color: black;
+}
+div:not(.padre){
+    padding-left: 50px;
+}

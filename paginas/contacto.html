@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - UPdM</title>
+    <link rel="shortcut icon" href="../imagenes/artesania.png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <img src="../imagenes/unaParte.jpg" alt="de mi">
+
+</head>
+<body>
+    <h1>Contacto</h1>
+    <header id="fondoRojo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+                <li><a href="../paginas/servicios.html">Servicios</a></li>
+                <li><a href="../paginas/galeria.html">Galeria</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+     </header>
+     <main class="mainNosotros">
+        <div class="otro">
+            <div class="hijo">Soy un hijo</div>
+            <div class="otro">Soy un div</div>
+        </div>
+
+        <div class="padre">
+            <div class="otro">Soy un div</div>
+            <div class="hijo">Soy un hijo</div>
+            <div class="hijo">Soy un hijo</div>
+
+        </div>
+
+     </main>
+
+
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" nombre="" id="nombre">
+
+        <br> <!-- Salto de linea -->
+
+        <label for="email">Correo electronico:</label>
+        <input type="email" name="email" id="email">
+
+        <br>
+
+        <label for="pwd">Contraseña:</label>
+        <input type="password" name="pwd" id="pwd">
+
+        <div>
+            <label for="mensaje">Deja tu mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- RADIO (solo una opcion)-->
+        <label for="genero">Genero:</label>
+        <input type="radio" name="genero" id="genero" value="M">Masculino
+        <input type="radio" name="genero" id="genero" value="F">Femenino  
+        <input type="radio" name="genero" id="genero" value="PE">Prefiero no especificar
+
+        <br>
+        <!-- CHECKBOX (una, varias, todas o ninguna opcion)-->
+        <label for="terminos">Acepta terminos</label>
+        <input type="checkbox" name="terminos" id="terminos">
+
+        <label for="newsletter">Newsletter</label>
+        <input type="checkbox" name="newsletter" id="newsletter">
+
+        <br>
+
+        <!-- MENU DESPLEGABLE -->
+        <label for="pais">Pais:</label>
+        <select name="" id="">
+            <option value="---">---</option>
+            <option value="ARG">Argentina</option>
+            <option value="URU">Uruguay</option>
+            <option value="CHI">Chile</option>
+        </select>
+
+        <br>
+
+        <!-- CONJUNTO DE CAMPO -->
+        <fieldset>
+            <legend>Datos de facturacion</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"
+                required placeholder="Aca tenes que poner tu nombre">
+                
+            
+        </fieldset>
+
+        <!-- BOTENOS -->
+        <input type="button" value="Funcionar con JS">
+        <input type="reset" value="Resetear el formulario">
+        <input type="submit" value="Enviar el formulario">
+    </form>
+    
+</body>
+</html>
